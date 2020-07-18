@@ -15,11 +15,30 @@
         <p> This is a platform where resources can be uploaded and linked. 
             Try clicking on any underscored word to navigate to other web pages 
             until you find the info you need.</p>  
-         
-        <form action="" method="">
-            <label for="Enter words">Enter:</label>
-            <input type="text" id="Enter words" name="" size="20">
-        </form>
+       
+      
+      <div style="width:600px;margin:0 auto;">
+        <input id="i1" οnfοcus="Focus();" οnblur="Blur();" type="text" value="Enter Key Words">
+        <input type="text" placeholder="Enter Key Words">
+        </div>
+
+       <script>
+        function Focus(){
+            var tag=document.getElementById('i1');
+            var val=tag.value;
+            if(val=='Enter Key Words'){
+                tag.value='';
+            }
+        }
+        function Blur(){
+            var tag=document.getElementById('i1');
+            var val=tag.value;
+            if(val.length==0){
+                tag.value='Enter Key Words';
+            }
+        }
+    </script>
+
 
         <hr>
         <h3>Teaching Staff</h3>
@@ -57,5 +76,3 @@
    </body>
 
 
-test 15.49   put word at center and and background color </p>  
-try add space!!! </p>    
